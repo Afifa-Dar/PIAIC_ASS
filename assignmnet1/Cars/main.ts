@@ -12,11 +12,10 @@ let car_obj = (manufacturar , model , ...features) => {
         for(let o of features){
             for(let val in o) {
                 obj[val] = o[val]
-                console.log(obj)
             }
         }
     }
     return obj
 
 }
-console.log('toyota' , '2020', {'color':'blue'} , {'AC':'on'})
+console.log(car_obj('toyota' , '2020', {'color':'blue'} , {'AC':'on'}))
